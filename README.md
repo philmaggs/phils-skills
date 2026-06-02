@@ -23,7 +23,7 @@ Curated by **Phil Maggs** · [LinkedIn](https://www.linkedin.com/in/philmaggs/)
 
 ## The collection
 
-**19 skills · 6 MCPs**, grouped by category. Each entry links to its source.
+**20 skills · 6 MCPs**, grouped by category. Each entry links to its source.
 
 ---
 
@@ -67,6 +67,13 @@ _Connects to: Figma files & Dev Mode_
 The one that quietly fixed the thing everyone moans about. It bans the tells - the purple gradients, Inter everywhere, the same rounded corners on everything - and swaps default taste for an actual point of view. Same prompt, output that looks like a grown-up made it. It won't replace a designer on client work, but your internal tools stop needing an apology. If you adopt one skill off this whole list, make it this one.
 **Reach for it when:** Any time Claude is touching an interface and you don't fancy spending the afternoon de-slopping it.
 `UI` · `design system` · `anti-slop` · `official`
+
+#### [Hallmark](https://github.com/nutlope/hallmark)
+🟢 **Essential** · by Nutlope · tested Jun 2026
+**Audits a live site for AI-slop and redesigns it - greenfield pages, redesigns, or design pulled from a URL or screenshot.**
+I pointed it at my own site half-expecting cosmetic notes and got a proper audit - not a list of gripes, but the real tells: weak hierarchy, lazy spacing, the defaults that quietly scream "generated". Then it fixed them. The site is measurably better for it and I didn't have to fight it to get there. Most "design" skills flatter your input; this one improves it. If your pages work but look a touch AI-made, this is the fastest way out.
+**Reach for it when:** A page works but looks generic and you want a real audit-and-redesign, not a fresh coat of paint.
+`design` · `audit` · `anti-slop` · `redesign`
 
 #### [Artifacts Builder](https://github.com/anthropics/skills)
 🔵 **Recommended** · by Anthropic · tested Apr 2026
@@ -266,6 +273,7 @@ The discipline is the whole point: look before you leap - wait for the page to s
 |---|---|---|---|
 | Figma MCP ✦ (MCP) | Design & Interface | Essential | [link](https://github.com/figma/dev-mode-mcp-server) |
 | Frontend Design ✦ | Design & Interface | Essential | [link](https://github.com/anthropics/skills) |
+| Hallmark | Design & Interface | Essential | [link](https://github.com/nutlope/hallmark) |
 | Image Prompt Generator ✦ | Image & Motion | Essential | [link](https://github.com/huangserva/skill-prompt-generator) |
 | Marketing Skills ✦ | Marketing & Growth | Essential | [link](https://github.com/coreyhaines31/marketingskills) |
 | PPTX Builder ✦ | Docs & Decks | Essential | [link](https://github.com/anthropics/skills) |
@@ -293,3 +301,4 @@ The discipline is the whole point: look before you leap - wait for the page to s
 ---
 
 _Last updated 2 June 2026. Built from the live site content. Tiers and verdicts are personal opinions from real testing._
+
