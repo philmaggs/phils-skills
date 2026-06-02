@@ -10,7 +10,7 @@ Curated by **Phil Maggs** · [LinkedIn](https://www.linkedin.com/in/philmaggs/)
 
 ## Start here: install Phil's Skill
 
-Twenty-six tools on the shelf and counting. You don't want to read all of them - you want the one for the job in front of you.
+Twenty-seven tools on the shelf and counting. You don't want to read all of them - you want the one for the job in front of you.
 
 That's **Phil's Skill**. One meta-skill: tell it what you're doing in plain words - *"turn this CSV into a deck"*, *"stop my UI looking AI-made"*, *"is there an MCP for Notion"* - and it reads the live shelf, hands you the two or three that actually fit, with my verdict and the line to install the winner.
 
@@ -41,30 +41,7 @@ Then just describe the job. That's the whole trick. 🙂
 
 ## The collection
 
-**20 skills · 6 MCPs**, grouped by category. Each entry links to its source.
-
----
-
-## personal-voice-builder
-
-**Made by:** Phillip Maggs
-
-A meta-skill that builds *other* skills: point it at your own messages and it produces a reusable "writing-style" skill that makes Claude write as you — plus an evidence-backed analysis of how you actually communicate.
-
-**Why I made it.** I first built a one-off skill from my own Slack history that let Claude draft messages in my voice. It worked well enough that I wanted anyone to be able to do the same for themselves, from any data source — not just Slack. So I generalised the whole workflow into a single skill you can run.
-
-**What it does.** It's source-agnostic: it detects your connected tools (Slack, email, Notion, docs, etc.), recommends the most data-rich source, and fans out to collect a large, verbatim sample of your own messages. It auto-detects how your tone shifts by audience (boss, peers, reports, customers, friends), extracts your fingerprints (gears, mechanics, openers/closers, persuasion patterns), and outputs an installable `SKILL.md` + verbatim `reference-examples.md` + an analysis report. It then evaluates the result against your real messages and tightens it.
-
-**Why it's good.**
-- **Grounded, not generic.** Every stylistic claim is backed by a real quote from your own writing — it won't flatten you into a polite generic voice.
-- **Captures the contrasts.** The value is in how your register changes by audience and the gap between your one-word replies and your long memos — both of which it models explicitly.
-- **Volume-gated.** It refuses to build from a thin sample and tells you to widen the source, so you don't get a hollow result.
-- **Self-evaluating.** It ships with a built-in eval loop that scores its own output against your real messages and checks the common "over-polish" failure modes (over-formal, too clean, generic closers, paragraphing instead of fragmenting).
-- **Benchmarked.** In testing across two opposite personas (a casual founder and a formal academic), the skill hit a 100% completeness pass rate vs 69% for an unguided baseline — the baseline frequently skipped the reference examples, analysis, eval, and packaging.
-
-**How to use it.** In Cowork or Claude Code, just ask: *"analyse my Slack and build me a personal writing-style skill"* — or *"make Claude sound like me."* It'll ask a couple of scoping questions, then do the rest.
-
-🔧 **Source lives in this repo:** [`./skills/personal-voice-builder`](./skills/personal-voice-builder)
+**21 skills · 6 MCPs**, grouped by category. Each entry links to its source.
 
 ---
 
@@ -74,7 +51,7 @@ _Skills that raise the floor on anything visual - UI, brand, generative art._
 #### [Figma MCP](https://github.com/figma/dev-mode-mcp-server) ✦
 🟢 **Essential** · `MCP` · by Figma · tested May 2026
 **Hands Claude your actual Figma frames - real layers, variables and specs, not a screenshot.**
-This is the one that closes the gap between the design file and the build. Point Claude at a frame and it reads the real structure - the auto-layout, the variables, the spacing you actually set - instead of squinting at a flat picture and guessing. The output respects your tokens because it can finally see them. Setup takes a minute and Dev Mode is a prerequisite, but once it's running, "make it match the Figma" stops being a negotiation. If you ship design-to-code, this isn't optional.
+This is the one that closes the gap between the design file and the build. Point Claude at a frame and it reads the real structure - the auto-layout, the variables, the spacing you actually set - instead of squinting at a flat picture and guessing. The output respects your tokens because it can finally see them. Setup takes a minute and Dev Mode is a prerequisite, but once it's running, “make it match the Figma” stops being a negotiation. If you ship design-to-code, this isn't optional.
 _Connects to: Figma files & Dev Mode_
 **Reach for it when:** Turning a real Figma design into faithful code without redrawing it by eye.
 `figma` · `design-to-code` · `dev mode` · `official`
@@ -89,7 +66,7 @@ The one that quietly fixed the thing everyone moans about. It bans the tells - t
 #### [Hallmark](https://github.com/nutlope/hallmark)
 🟢 **Essential** · by Nutlope · tested Jun 2026
 **Audits a live site for AI-slop and redesigns it - greenfield pages, redesigns, or design pulled from a URL or screenshot.**
-I pointed it at my own site half-expecting cosmetic notes and got a proper audit - not a list of gripes, but the real tells: weak hierarchy, lazy spacing, the defaults that quietly scream "generated". Then it fixed them. The site is measurably better for it and I didn't have to fight it to get there. Most "design" skills flatter your input; this one improves it. If your pages work but look a touch AI-made, this is the fastest way out.
+I pointed it at my own site half-expecting cosmetic notes and got a proper audit - not a list of gripes, but the real tells: weak hierarchy, lazy spacing, the defaults that quietly scream “generated”. Then it fixed them. The site is measurably better for it and I didn't have to fight it to get there. Most “design” skills flatter your input; this one improves it. If your pages work but look a touch AI-made, this is the fastest way out.
 **Reach for it when:** A page works but looks generic and you want a real audit-and-redesign, not a fresh coat of paint.
 `design` · `audit` · `anti-slop` · `redesign`
 
@@ -119,11 +96,12 @@ The show-off of the collection, and it's earned the right. Seeded randomness let
 ### ¶ Copywriting
 _Words that carry their weight. Voice, tone, and the craft of the sentence._
 
-<!-- TODO (Phil): the "Tone of Voice" verdict was missing from the batch - fill this before publishing. Placeholder below keeps the count at 19 skills. -->
 #### [Tone of Voice](https://agentskills.io) ✦
-🟢 **Essential** · by Community · tested 2026
-**⚠️ Verdict still to be written - Phil to provide. (Placeholder; do not publish as-is.)**
-`voice` · `tone` · `copywriting`
+🟢 **Essential** · by Community · tested May 2026
+**Teaches Claude your voice from a handful of samples, then holds it across everything.**
+The single highest-leverage thing you can teach an assistant, and this does it without ceremony. Drop in a few pieces you're proud of, name the tics you love and the ones you don't, and the drift just stops. Generic AI copy is the default state of the universe and this is the cheapest way out of it. It won't make you a better writer, but it stops Claude quietly undoing the work of being one. Everyone's first real skill should be a voice skill.
+**Reach for it when:** Always - the moment more than one thing goes out written “as you”, you want this holding the line.
+`voice` · `tone` · `editing` · `consistency`
 
 #### [Longform Editor](https://agentskills.io)
 🔵 **Recommended** · by Community · tested Apr 2026
@@ -181,7 +159,7 @@ _Real .docx, .pptx, .xlsx and .pdf - not Markdown wearing a costume._
 #### [PPTX Builder](https://github.com/anthropics/skills) ✦
 🟢 **Essential** · by Anthropic · tested May 2026
 **Generates genuine PowerPoint - editable shapes and text, not a screenshot of a deck.**
-The skill that ended my relationship with "export this Markdown to slides" hacks. It makes real .pptx - proper text boxes, real shapes, a layout you can open in PowerPoint without weeping. Visual QA is baked in, on the sane assumption that something is always slightly off. Pair it with the spreadsheet skill and a CSV becomes a board-ready deck in one move.
+The skill that ended my relationship with “export this Markdown to slides” hacks. It makes real .pptx - proper text boxes, real shapes, a layout you can open in PowerPoint without weeping. Visual QA is baked in, on the sane assumption that something is always slightly off. Pair it with the spreadsheet skill and a CSV becomes a board-ready deck in one move.
 **Reach for it when:** Anyone downstream is going to open the file in PowerPoint and judge you by it.
 `pptx` · `slides` · `office` · `official`
 
@@ -196,14 +174,14 @@ _Connects to: Notion workspaces & databases_
 #### [PDF Toolkit](https://github.com/anthropics/skills)
 🔵 **Recommended** · by Anthropic · tested Apr 2026
 **Extraction, form-filling and batch redaction - the canonical progressive-disclosure skill.**
-Sounds like a press release - "AI does PDFs" - right up until it quietly changes how you handle contracts. A pre-written script reads the form fields without dragging the whole document into context, so it's fast and deterministic where it counts. It's the textbook example of a skill done properly, and it earns the cliché. The least glamorous tool here, and the one you'll reach for most.
+Sounds like a press release - “AI does PDFs” - right up until it quietly changes how you handle contracts. A pre-written script reads the form fields without dragging the whole document into context, so it's fast and deterministic where it counts. It's the textbook example of a skill done properly, and it earns the cliché. The least glamorous tool here, and the one you'll reach for most.
 **Reach for it when:** Anything PDF - pulling data out, filling forms in, redacting at volume.
 `pdf` · `extraction` · `forms` · `official`
 
 #### [XLSX Builder](https://github.com/anthropics/skills)
 🔵 **Recommended** · by Anthropic · tested May 2026
 **Real spreadsheets with live formulas - dynamic, not hard-coded numbers.**
-The difference between this and "export the numbers to a table" is one word: formulas. It writes live ones, so the model stays alive - change an input and the sheet recalculates the way a spreadsheet is meant to, instead of sitting there as a fossil of numbers that were true once. Zero-error validation is the house rule, which is the only standard worth having when people are going to trust the totals. It doesn't show off - it just doesn't lie to you.
+The difference between this and “export the numbers to a table” is one word: formulas. It writes live ones, so the model stays alive - change an input and the sheet recalculates the way a spreadsheet is meant to, instead of sitting there as a fossil of numbers that were true once. Zero-error validation is the house rule, which is the only standard worth having when people are going to trust the totals. It doesn't show off - it just doesn't lie to you.
 **Reach for it when:** The deliverable is a model someone will poke at, not a static table.
 `xlsx` · `spreadsheets` · `formulas` · `office`
 
@@ -246,6 +224,13 @@ Pure delight, and it knows exactly how small it is. Shake, pulse, bounce, spin, 
 ### ⌗ Build & Tooling
 _Meta-skills, MCP servers and the plumbing that makes the rest sing._
 
+#### [Personal Voice Builder](https://github.com/philmaggs/phils-skills/tree/main/skills/personal-voice-builder) ✦
+🟢 **Essential** · by Phillip Maggs · tested Jun 2026
+**Turns your own messages into a reusable skill that makes Claude write as you, not as a generic professional.**
+The one on this shelf I built rather than found. I made a one-off voice skill from my Slack history, it worked too well to keep to myself, so I generalised it to run off any source. Point it at wherever you actually write - Slack, email, Notion - and it collects a big verbatim sample, works out how your tone shifts by audience, and writes you an installable style skill plus an evidence-backed analysis of how you communicate. Every claim it makes is pinned to a real quote of yours, it refuses to run on a thin sample, and it scores its own output against your real messages before handing over. It captures the contrast between your one-word replies and your long memos, which is where a voice actually lives.
+**Reach for it when:** You want Claude to sound like you across chat, email and docs, instead of falling back on a polite generic voice.
+`voice` · `writing style` · `meta` · `personal`
+
 #### [Skill Creator](https://github.com/anthropics/skills) ✦
 🟢 **Essential** · by Anthropic · tested May 2026
 **The meta-skill: a skill for writing skills, with the frontmatter contract enforced.**
@@ -271,7 +256,7 @@ Where Skills teach the workflow, MCPs expose the tools - and this writes the ser
 #### [Linear MCP](https://github.com/linear/linear-mcp)
 ⚪ **Worth a look** · `MCP` · by Linear · tested Mar 2026
 **Turns a loose intention into a properly-shaped Linear issue, assigned and in the right cycle.**
-A focused little server that does one workflow cleanly: it turns "we should fix the onboarding drop-off" into a real issue with the right project, labels and cycle. It won't run your sprint, but it kills the friction that means good ideas never get logged. Niche, tidy, exactly as ambitious as it needs to be - the kind of MCP you forget is even an integration.
+A focused little server that does one workflow cleanly: it turns “we should fix the onboarding drop-off” into a real issue with the right project, labels and cycle. It won't run your sprint, but it kills the friction that means good ideas never get logged. Niche, tidy, exactly as ambitious as it needs to be - the kind of MCP you forget is even an integration.
 _Connects to: Linear issues, projects & cycles_
 **Reach for it when:** Capturing work into Linear without breaking flow to fill in the form.
 `linear` · `issues` · `planning` · `ops`
@@ -296,6 +281,7 @@ The discipline is the whole point: look before you leap - wait for the page to s
 | Marketing Skills ✦ | Marketing & Growth | Essential | [link](https://github.com/coreyhaines31/marketingskills) |
 | PPTX Builder ✦ | Docs & Decks | Essential | [link](https://github.com/anthropics/skills) |
 | Skill Creator ✦ | Build & Tooling | Essential | [link](https://github.com/anthropics/skills) |
+| Personal Voice Builder ✦ | Build & Tooling | Essential | [link](https://github.com/philmaggs/phils-skills/tree/main/skills/personal-voice-builder) |
 | Tone of Voice ✦ | Copywriting | Essential | [link](https://agentskills.io) |
 | GitHub MCP (MCP) | Build & Tooling | Essential | [link](https://github.com/github/github-mcp-server) |
 | Artifacts Builder | Design & Interface | Recommended | [link](https://github.com/anthropics/skills) |
