@@ -8,6 +8,24 @@ Curated by **Phil Maggs** · [LinkedIn](https://www.linkedin.com/in/philmaggs/)
 
 ---
 
+## Start here: install Phil's Skill
+
+Twenty-six tools on the shelf and counting. You don't want to read all of them - you want the one for the job in front of you.
+
+That's **Phil's Skill**. One meta-skill: tell it what you're doing in plain words - *"turn this CSV into a deck"*, *"stop my UI looking AI-made"*, *"is there an MCP for Notion"* - and it reads the live shelf, hands you the two or three that actually fit, with my verdict and the line to install the winner.
+
+No scrolling. No "is this any good?". No forty open tabs. The taste is baked in - it can only surface things that earned a place here.
+
+**Install it in one line:**
+
+```
+npx skills add philmaggs/phils-skills --skill phils-skill
+```
+
+Then just describe the job. That's the whole trick. 🙂
+
+---
+
 ## How a skill earns its place
 
 | Tier | Means |
@@ -301,4 +319,12 @@ The discipline is the whole point: look before you leap - wait for the page to s
 ---
 
 _Last updated 2 June 2026. Built from the live site content. Tiers and verdicts are personal opinions from real testing._
+
+<!--
+MAINTAINER NOTE — this README is the single source of truth for the curated collection.
+The "phils-skill" meta-skill reads a generated index (skills/phils-skill/skills.json).
+After ANY change here, regenerate the index so it never drifts:
+    node build-index.mjs
+Never hand-edit skills.json. Placeholder entries (verdict not yet written) are skipped automatically.
+-->
 
