@@ -25,6 +25,31 @@ Curated by **Phil Maggs** · [LinkedIn](https://www.linkedin.com/in/philmaggs/)
 
 **19 skills · 6 MCPs**, grouped by category. Each entry links to its source.
 
+---
+
+## personal-voice-builder
+
+**Made by:** Phillip Maggs
+
+A meta-skill that builds *other* skills: point it at your own messages and it produces a reusable "writing-style" skill that makes Claude write as you — plus an evidence-backed analysis of how you actually communicate.
+
+**Why I made it.** I first built a one-off skill from my own Slack history that let Claude draft messages in my voice. It worked well enough that I wanted anyone to be able to do the same for themselves, from any data source — not just Slack. So I generalised the whole workflow into a single skill you can run.
+
+**What it does.** It's source-agnostic: it detects your connected tools (Slack, email, Notion, docs, etc.), recommends the most data-rich source, and fans out to collect a large, verbatim sample of your own messages. It auto-detects how your tone shifts by audience (boss, peers, reports, customers, friends), extracts your fingerprints (gears, mechanics, openers/closers, persuasion patterns), and outputs an installable `SKILL.md` + verbatim `reference-examples.md` + an analysis report. It then evaluates the result against your real messages and tightens it.
+
+**Why it's good.**
+- **Grounded, not generic.** Every stylistic claim is backed by a real quote from your own writing — it won't flatten you into a polite generic voice.
+- **Captures the contrasts.** The value is in how your register changes by audience and the gap between your one-word replies and your long memos — both of which it models explicitly.
+- **Volume-gated.** It refuses to build from a thin sample and tells you to widen the source, so you don't get a hollow result.
+- **Self-evaluating.** It ships with a built-in eval loop that scores its own output against your real messages and checks the common "over-polish" failure modes (over-formal, too clean, generic closers, paragraphing instead of fragmenting).
+- **Benchmarked.** In testing across two opposite personas (a casual founder and a formal academic), the skill hit a 100% completeness pass rate vs 69% for an unguided baseline — the baseline frequently skipped the reference examples, analysis, eval, and packaging.
+
+**How to use it.** In Cowork or Claude Code, just ask: *"analyse my Slack and build me a personal writing-style skill"* — or *"make Claude sound like me."* It'll ask a couple of scoping questions, then do the rest.
+
+🔧 **Source lives in this repo:** [`./skills/personal-voice-builder`](./skills/personal-voice-builder)
+
+---
+
 ### ◑ Design & Interface
 _Skills that raise the floor on anything visual - UI, brand, generative art._
 
@@ -232,29 +257,6 @@ _Connects to: Linear issues, projects & cycles_
 The discipline is the whole point: look before you leap - wait for the page to settle, screenshot it, find the selectors, then act. Never blind. That's why it doesn't flail the way naive automation does the moment a page loads half a second late. It won't decide what your tests should prove - that's still on you - but as a steady pair of hands on a live app, it's hard to fault. The unglamorous kind of reliable you stop worrying about.
 **Reach for it when:** You need to verify a running web app actually does what it claims.
 `testing` · `playwright` · `browser` · `QA`
-
----
-
-## personal-voice-builder
-
-**Made by:** Phillip Maggs
-
-A meta-skill that builds *other* skills: point it at your own messages and it produces a reusable "writing-style" skill that makes Claude write as you — plus an evidence-backed analysis of how you actually communicate.
-
-**Why I made it.** I first built a one-off skill from my own Slack history that let Claude draft messages in my voice. It worked well enough that I wanted anyone to be able to do the same for themselves, from any data source — not just Slack. So I generalised the whole workflow into a single skill you can run.
-
-**What it does.** It's source-agnostic: it detects your connected tools (Slack, email, Notion, docs, etc.), recommends the most data-rich source, and fans out to collect a large, verbatim sample of your own messages. It auto-detects how your tone shifts by audience (boss, peers, reports, customers, friends), extracts your fingerprints (gears, mechanics, openers/closers, persuasion patterns), and outputs an installable `SKILL.md` + verbatim `reference-examples.md` + an analysis report. It then evaluates the result against your real messages and tightens it.
-
-**Why it's good.**
-- **Grounded, not generic.** Every stylistic claim is backed by a real quote from your own writing — it won't flatten you into a polite generic voice.
-- **Captures the contrasts.** The value is in how your register changes by audience and the gap between your one-word replies and your long memos — both of which it models explicitly.
-- **Volume-gated.** It refuses to build from a thin sample and tells you to widen the source, so you don't get a hollow result.
-- **Self-evaluating.** It ships with a built-in eval loop that scores its own output against your real messages and checks the common "over-polish" failure modes (over-formal, too clean, generic closers, paragraphing instead of fragmenting).
-- **Benchmarked.** In testing across two opposite personas (a casual founder and a formal academic), the skill hit a 100% completeness pass rate vs 69% for an unguided baseline — the baseline frequently skipped the reference examples, analysis, eval, and packaging.
-
-**How to use it.** In Cowork or Claude Code, just ask: *"analyse my Slack and build me a personal writing-style skill"* — or *"make Claude sound like me."* It'll ask a couple of scoping questions, then do the rest.
-
-🔧 **Source lives in this repo:** [`./skills/personal-voice-builder`](./skills/personal-voice-builder)
 
 ---
 
