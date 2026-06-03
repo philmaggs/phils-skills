@@ -1,0 +1,48 @@
+name: Sync skills index
+
+# README.md is the single source of truth for the curated collection.
+# skills/phils-skill/skills.json is GENERATED from it by build-index.mjs.
+# This keeps them in sync automatically: whenever README.md changes on main
+# (including edits made directly on GitHub), rebuild the index and commit it back.
+# Loop-safe: triggers only on README.md changes, and the bot only commits skills.json.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-index
+  cancel-in-progress: false
+
+jobs:
+  rebuild-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Rebuild index from README
+        run: node build-index.mjs
+
+      - name: Commit the index if it changed
+        run: |
+          if git diff --quiet -- skills/phils-skill/skills.json; then
+            echo "Index already in sync with README — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add skills/phils-skill/skills.json
+          git commit -m "chore: auto-rebuild skills index from README [skip ci]"
+          git push
