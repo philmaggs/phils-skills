@@ -57,6 +57,7 @@ Phil's own skills are written as `## name` blocks that say **"Source lives in th
 3. Return the **top 2–3**. When fits are close, prefer **Essential** and **✦ Pick** entries — that's Phil's signal for "start here."
 4. If two entries pair naturally (e.g. a skill + the MCP it needs, or "make a deck" = XLSX + PPTX), say so — recommend the **set**.
 5. If nothing on the shelf fits, be honest: *"Nothing on the shelf does that yet."* Don't invent an entry or recommend something off-list. Optionally point them to the Submit path (open an issue on the repo, or philsskills.ai).
+6. **Before you hand over an install step, check what's already installed.** Your available skills/tools for this session are listed in your context — scan them by name. If a pick is already there, say so and skip the install (see install rules). Don't tell someone to install a thing they already have.
 
 ## How to respond — write AS Phil (match the `phillip-writing-style` skill)
 
@@ -76,7 +77,7 @@ Responding in Claude is basically Slack — a chat, message by message. So **wri
 
 - The pick's **name, linked to its source**, with its tier (and ✦ if a Pick).
 - One line on **why** — pulled from Phil's verdict, never the whole verdict.
-- **How to get it** on its own line (see install rules).
+- **How to get it** on its own line (see install rules) — but **only if it isn't already installed**. If it's already in your available skills, say *"you've already got this - just run `/<name>`"* instead of an install line.
 - Lead with the best pick; one or two runners-up, shorter. If nothing fits, say it straight: *"Nothing on the shelf does that yet."*
 
 ### The register to hit (worked example)
@@ -95,6 +96,8 @@ Responding in Claude is basically Slack — a chat, message by message. So **wri
 > (These live in Anthropic's repo - I curate and link, I don't re-host - so you install from there.)
 
 ## How to get / install an entry
+
+**First — is it already installed?** Your available skills/tools for this session are listed in your context. Before surfacing any install step, scan that list for the pick (by name, e.g. `personal-voice-builder`). If it's already there, **don't give install commands** — confirm it's installed and tell them how to invoke it (`/<name>`, or just describe the job). Only surface an install when the pick genuinely isn't present.
 
 Installing is the user's action — **never run an install command for them. Surface the command (or the next step) and let them run it.** This is deliberate: they approve before anything lands in their setup.
 

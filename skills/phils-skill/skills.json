@@ -1,35 +1,15 @@
 {
   "generatedFrom": "README.md",
-  "generatedAt": "2026-06-02",
+  "generatedAt": "2026-06-03",
   "repo": "philmaggs/phils-skills",
   "site": "https://philsskills.ai",
   "note": "AUTO-GENERATED from README.md by build-index.mjs. Do not hand-edit. README is the single source of truth.",
   "counts": {
-    "total": 26,
-    "skills": 20,
+    "total": 27,
+    "skills": 21,
     "mcps": 6
   },
   "skills": [
-    {
-      "id": "personal-voice-builder",
-      "name": "personal-voice-builder",
-      "type": "skill",
-      "category": "Build & Tooling",
-      "tier": "Featured",
-      "pick": true,
-      "byPhil": true,
-      "author": "Phillip Maggs",
-      "tested": null,
-      "source": "./skills/personal-voice-builder",
-      "hosted": "repo",
-      "summary": "A meta-skill that builds *other* skills: point it at your own messages and it produces a reusable \"writing-style\" skill that makes Claude write as you — plus an evidence-backed analysis of how you actually communicate.",
-      "verdict": "A meta-skill that builds *other* skills: point it at your own messages and it produces a reusable \"writing-style\" skill that makes Claude write as you — plus an evidence-backed analysis of how you actually communicate.",
-      "tags": [
-        "meta",
-        "build-your-own",
-        "voice"
-      ]
-    },
     {
       "id": "figma-mcp",
       "name": "Figma MCP",
@@ -43,7 +23,7 @@
       "hosted": "external",
       "connects": "Figma files & Dev Mode",
       "summary": "Hands Claude your actual Figma frames - real layers, variables and specs, not a screenshot.",
-      "verdict": "This is the one that closes the gap between the design file and the build. Point Claude at a frame and it reads the real structure - the auto-layout, the variables, the spacing you actually set - instead of squinting at a flat picture and guessing. The output respects your tokens because it can finally see them. Setup takes a minute and Dev Mode is a prerequisite, but once it's running, \"make it match the Figma\" stops being a negotiation. If you ship design-to-code, this isn't optional.",
+      "verdict": "This is the one that closes the gap between the design file and the build. Point Claude at a frame and it reads the real structure - the auto-layout, the variables, the spacing you actually set - instead of squinting at a flat picture and guessing. The output respects your tokens because it can finally see them. Setup takes a minute and Dev Mode is a prerequisite, but once it's running, “make it match the Figma” stops being a negotiation. If you ship design-to-code, this isn't optional.",
       "reachForItWhen": "Turning a real Figma design into faithful code without redrawing it by eye.",
       "tags": [
         "figma",
@@ -85,7 +65,7 @@
       "source": "https://github.com/nutlope/hallmark",
       "hosted": "external",
       "summary": "Audits a live site for AI-slop and redesigns it - greenfield pages, redesigns, or design pulled from a URL or screenshot.",
-      "verdict": "I pointed it at my own site half-expecting cosmetic notes and got a proper audit - not a list of gripes, but the real tells: weak hierarchy, lazy spacing, the defaults that quietly scream \"generated\". Then it fixed them. The site is measurably better for it and I didn't have to fight it to get there. Most \"design\" skills flatter your input; this one improves it. If your pages work but look a touch AI-made, this is the fastest way out.",
+      "verdict": "I pointed it at my own site half-expecting cosmetic notes and got a proper audit - not a list of gripes, but the real tells: weak hierarchy, lazy spacing, the defaults that quietly scream “generated”. Then it fixed them. The site is measurably better for it and I didn't have to fight it to get there. Most “design” skills flatter your input; this one improves it. If your pages work but look a touch AI-made, this is the fastest way out.",
       "reachForItWhen": "A page works but looks generic and you want a real audit-and-redesign, not a fresh coat of paint.",
       "tags": [
         "design",
@@ -155,6 +135,27 @@
         "generative",
         "print",
         "creative coding"
+      ]
+    },
+    {
+      "id": "tone-of-voice",
+      "name": "Tone of Voice",
+      "type": "skill",
+      "category": "Copywriting",
+      "tier": "Essential",
+      "pick": true,
+      "author": "Community",
+      "tested": "May 2026",
+      "source": "https://agentskills.io",
+      "hosted": "external",
+      "summary": "Teaches Claude your voice from a handful of samples, then holds it across everything.",
+      "verdict": "The single highest-leverage thing you can teach an assistant, and this does it without ceremony. Drop in a few pieces you're proud of, name the tics you love and the ones you don't, and the drift just stops. Generic AI copy is the default state of the universe and this is the cheapest way out of it. It won't make you a better writer, but it stops Claude quietly undoing the work of being one. Everyone's first real skill should be a voice skill.",
+      "reachForItWhen": "Always - the moment more than one thing goes out written “as you”, you want this holding the line.",
+      "tags": [
+        "voice",
+        "tone",
+        "editing",
+        "consistency"
       ]
     },
     {
@@ -297,7 +298,7 @@
       "source": "https://github.com/anthropics/skills",
       "hosted": "external",
       "summary": "Generates genuine PowerPoint - editable shapes and text, not a screenshot of a deck.",
-      "verdict": "The skill that ended my relationship with \"export this Markdown to slides\" hacks. It makes real .pptx - proper text boxes, real shapes, a layout you can open in PowerPoint without weeping. Visual QA is baked in, on the sane assumption that something is always slightly off. Pair it with the spreadsheet skill and a CSV becomes a board-ready deck in one move.",
+      "verdict": "The skill that ended my relationship with “export this Markdown to slides” hacks. It makes real .pptx - proper text boxes, real shapes, a layout you can open in PowerPoint without weeping. Visual QA is baked in, on the sane assumption that something is always slightly off. Pair it with the spreadsheet skill and a CSV becomes a board-ready deck in one move.",
       "reachForItWhen": "Anyone downstream is going to open the file in PowerPoint and judge you by it.",
       "tags": [
         "pptx",
@@ -340,7 +341,7 @@
       "source": "https://github.com/anthropics/skills",
       "hosted": "external",
       "summary": "Extraction, form-filling and batch redaction - the canonical progressive-disclosure skill.",
-      "verdict": "Sounds like a press release - \"AI does PDFs\" - right up until it quietly changes how you handle contracts. A pre-written script reads the form fields without dragging the whole document into context, so it's fast and deterministic where it counts. It's the textbook example of a skill done properly, and it earns the cliché. The least glamorous tool here, and the one you'll reach for most.",
+      "verdict": "Sounds like a press release - “AI does PDFs” - right up until it quietly changes how you handle contracts. A pre-written script reads the form fields without dragging the whole document into context, so it's fast and deterministic where it counts. It's the textbook example of a skill done properly, and it earns the cliché. The least glamorous tool here, and the one you'll reach for most.",
       "reachForItWhen": "Anything PDF - pulling data out, filling forms in, redacting at volume.",
       "tags": [
         "pdf",
@@ -361,7 +362,7 @@
       "source": "https://github.com/anthropics/skills",
       "hosted": "external",
       "summary": "Real spreadsheets with live formulas - dynamic, not hard-coded numbers.",
-      "verdict": "The difference between this and \"export the numbers to a table\" is one word: formulas. It writes live ones, so the model stays alive - change an input and the sheet recalculates the way a spreadsheet is meant to, instead of sitting there as a fossil of numbers that were true once. Zero-error validation is the house rule, which is the only standard worth having when people are going to trust the totals. It doesn't show off - it just doesn't lie to you.",
+      "verdict": "The difference between this and “export the numbers to a table” is one word: formulas. It writes live ones, so the model stays alive - change an input and the sheet recalculates the way a spreadsheet is meant to, instead of sitting there as a fossil of numbers that were true once. Zero-error validation is the house rule, which is the only standard worth having when people are going to trust the totals. It doesn't show off - it just doesn't lie to you.",
       "reachForItWhen": "The deliverable is a model someone will poke at, not a static table.",
       "tags": [
         "xlsx",
@@ -456,6 +457,27 @@
       ]
     },
     {
+      "id": "personal-voice-builder",
+      "name": "Personal Voice Builder",
+      "type": "skill",
+      "category": "Build & Tooling",
+      "tier": "Essential",
+      "pick": true,
+      "author": "Phillip Maggs",
+      "tested": "Jun 2026",
+      "source": "https://github.com/philmaggs/phils-skills/tree/main/skills/personal-voice-builder",
+      "hosted": "repo",
+      "summary": "Turns your own messages into a reusable skill that makes Claude write as you, not as a generic professional.",
+      "verdict": "The one on this shelf I built rather than found. I made a one-off voice skill from my Slack history, it worked too well to keep to myself, so I generalised it to run off any source. Point it at wherever you actually write - Slack, email, Notion - and it collects a big verbatim sample, works out how your tone shifts by audience, and writes you an installable style skill plus an evidence-backed analysis of how you communicate. Every claim it makes is pinned to a real quote of yours, it refuses to run on a thin sample, and it scores its own output against your real messages before handing over. It captures the contrast between your one-word replies and your long memos, which is where a voice actually lives.",
+      "reachForItWhen": "You want Claude to sound like you across chat, email and docs, instead of falling back on a polite generic voice.",
+      "tags": [
+        "voice",
+        "writing style",
+        "meta",
+        "personal"
+      ]
+    },
+    {
       "id": "skill-creator",
       "name": "Skill Creator",
       "type": "skill",
@@ -532,7 +554,7 @@
       "hosted": "external",
       "connects": "Linear issues, projects & cycles",
       "summary": "Turns a loose intention into a properly-shaped Linear issue, assigned and in the right cycle.",
-      "verdict": "A focused little server that does one workflow cleanly: it turns \"we should fix the onboarding drop-off\" into a real issue with the right project, labels and cycle. It won't run your sprint, but it kills the friction that means good ideas never get logged. Niche, tidy, exactly as ambitious as it needs to be - the kind of MCP you forget is even an integration.",
+      "verdict": "A focused little server that does one workflow cleanly: it turns “we should fix the onboarding drop-off” into a real issue with the right project, labels and cycle. It won't run your sprint, but it kills the friction that means good ideas never get logged. Niche, tidy, exactly as ambitious as it needs to be - the kind of MCP you forget is even an integration.",
       "reachForItWhen": "Capturing work into Linear without breaking flow to fill in the form.",
       "tags": [
         "linear",
