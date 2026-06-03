@@ -581,8 +581,7 @@
         "testing",
         "playwright",
         "browser",
-        "QA",
-        "__citest__"
+        "QA"
       ]
     }
   ]
