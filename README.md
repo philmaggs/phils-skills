@@ -266,7 +266,7 @@ _Connects to: Linear issues, projects & cycles_
 **Drives a real browser with Playwright - reconnaissance first, then action.**
 The discipline is the whole point: look before you leap - wait for the page to settle, screenshot it, find the selectors, then act. Never blind. That's why it doesn't flail the way naive automation does the moment a page loads half a second late. It won't decide what your tests should prove - that's still on you - but as a steady pair of hands on a live app, it's hard to fault. The unglamorous kind of reliable you stop worrying about.
 **Reach for it when:** You need to verify a running web app actually does what it claims.
-`testing` · `playwright` · `browser` · `QA`
+`testing` · `playwright` · `browser` · `QA` · `__citest__`
 
 ---
 
