@@ -24,6 +24,12 @@ npx skills add philmaggs/phils-skills --skill phils-skill
 
 Then just describe the job. That's the whole trick. 🙂
 
+**Staying current.** The shelf updates itself - Phil's Skill reads this README live, so new entries and verdicts land the moment they're published. Nothing to reinstall. The only time you'd update is to pull improvements to the skill *itself*:
+
+```
+npx skills update phils-skill
+```
+
 ---
 
 ## How a skill earns its place
